@@ -1,0 +1,46 @@
+# If $x is equal to $y, run the echo command
+if [ $x = $y ]
+then
+	echo "X is equal to Y!"
+fi
+
+#If $x is not equal to $y, tun the echo command.
+if [ $x != $y ]
+then
+	echo "X does not equal Y!"
+fi
+
+#If str1 is not equal to str2, run the echo command and exit the script
+if [ "str1" != "str2" ]
+then
+	echo "These strings do not match"
+	exit
+fi
+
+#If x is greater than y, run the echo command
+if [ $x -gt $y ]
+then
+	echo "X does not equal Y!"
+fi
+
+#Checks if x is greater than y, run the echo command
+#if [ $x -gt $y ]
+#then
+#	echo "X does not equal Y!"
+#fi
+
+#If x is greater than y, run the echo command
+if [ -d /etc ]
+then
+	echo "The /etc directory exists!"
+fi
+
+if [ ! -d /my_cool_folder ]
+then
+	echo "My cool folder is not there!"
+fi
+
+if [ -f /my_file.txt ]
+then
+	echo "My_file.txt exists!"
+fi

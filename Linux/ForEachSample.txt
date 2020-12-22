@@ -1,0 +1,5 @@
+$csv = Import-Csv -Path .\chocoactivity.csv
+foreach ($line in $csv) {
+    Write-Output $line.name
+    choco uninstall -y $line.name
+}

@@ -1,0 +1,51 @@
+# This is a comment
+
+# if template script
+if [ <test> ]
+then
+	<run_this_command>
+fi
+
+#Sample if script
+if [ 5 -gt 8 ]
+then 
+	echo "This doesn't make sense!"
+fi
+
+#if template with else
+if [ <test> ]
+then
+	<run_this_command>
+else
+	<run_this_command>
+fi
+
+#Sample if/else script
+if [ 5 -gt 4 ]
+then
+	echo "That is correct"
+else
+	echo "This doesn't make sense!"
+fi
+
+#if template with multiple tests
+if [ <test1> ] && [ <test2> ]
+then
+	<run_this_command>
+fi
+
+#Sample if/else script, multiple conditions, both conditions need to be met
+if [ 5 -gt 4 ] && [ 5 -gt 8 ]
+then
+	echo "That is correct"
+else
+	echo "This doesn't make sense!"
+fi
+
+#Template if/else script with multiple conditions, only one needs to be met
+if [ <condition1> ] || [ <condition2> ]
+then
+	<run_this_command>
+else
+	<run_this_command>
+fi

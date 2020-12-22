@@ -1,0 +1,19 @@
+#Check user name against sysadmin
+if [ $USER != 'sysadmin' ]
+then
+	echo "You are not the sysadmin!"
+	exit
+fi
+
+#Check UID
+if [ $UID != 1000 ]
+then
+	echo "Your UID is wrong"
+	exit
+fi 
+
+#Check for sysadmin using whoami
+if [ $(whoami) = 'sysadmin' ]
+then
+	echo "You are the sysadmin!"
+fi
